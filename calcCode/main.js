@@ -1,12 +1,12 @@
 window.addEventListener('load', function(){
   // console.log("this works");
-  var calcBtns = ["0","1","2","3","4","5","6","7","8","9","/","x","+","-","=","."];
+  var calcBtns = ["7","8","9","/","4","5","6","x","1","2","3","+","0",".","=","-"];
   calcBtns.forEach(function(el){
-    var calculator = document.getElementById("calculator");
+    var btnDiv = document.getElementById("myBtns");
     var btn = document.createElement("a")
     btn.setAttribute("href", "#");
     btn.innerHTML = el;
     btn.className = "btn";
-    calculator.appendChild(btn);
+    btnDiv.append(btn);
   })
 })

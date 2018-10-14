@@ -1,12 +1,17 @@
-/* div{
-  border:1px solid black;
-  height:400px;
-} */
+body{
+  font-family:sans-serif;
+}
 #calculator{
   background-color: black;
-  height:450px;
-  width:33%;
-  border-radius:40px;
+  height: 525px;
+  width: 30%;
+  border-radius: 40px;
+}
+#myBtns{
+  /* border: 1px solid white; */
+  width: 76%;
+  float: left;
+  margin-left: 11%;
 }
 .inputFrame{
   background-color: black;
@@ -22,13 +27,18 @@
 }
 .btn{
   text-decoration: none;
-  float:left;
-  width:50px;
-  height:50px;
-  border-radius:40px;
-  font-size:10px;
-  color:black;
-  line-height:50px;
-  text-align:center;
-  background-color:white;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 66px;
+  font-size: 43px;
+  font-weight: bold;
+  color: black;
+  line-height: 54px;
+  text-align: center;
+  background-color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 3%;
+  padding: 5px;
 }
