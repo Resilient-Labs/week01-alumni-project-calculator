@@ -1,26 +1,26 @@
-# 🔢 Week01 Alumni Project: Calculator
+# OOP Calculator
+A calculator done using object-oriented programming.
 
-### Goal: Build a Simple Calculator using JS OOP best practices
+**Link to project:**
+https://quirky-aryabhata-167d92.netlify.com/
 
-### What it should look like:
+![alt tag](oop_calc.png)
 
-![Calculator](calculator.jpg)
+## How It's Made:
 
-### How to submit your code for review:
+**Tech used:** little bit of HTML, CSS & a lot of Javascript
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+So I took a previous version of a JS calculator and I converted it into an object-oriented program.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Lessons Learned:
+
+This was the first project i did with OOP so this helped me with learning the structure and overall syntax of OOP.  
+
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
+
+**Palettable:** https://github.com/alecortega/palettable
+
+**Twitter Battle:** https://github.com/alecortega/twitter-battle
+
+**Patch Panel:** https://github.com/alecortega/patch-panel
