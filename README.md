@@ -3,7 +3,7 @@ Build a Simple Calculator using JS OOP best practices
 
 **Link to project:** https://dreamy-newton-b08b4b.netlify.com
 
-![alt tag](calc.png)
+![alt tag](calcu.png)
 
 ## How It's Made:
 
