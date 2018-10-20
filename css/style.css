@@ -1,0 +1,19 @@
+
+html {
+   background-image: url("https://media.gettyimages.com/videos/elegant-numbers-background-loop-charcoal-grey-hd-video-id161738803?s=640x640");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height:600px;
+}
+body{
+  padding: 5% 20%;
+  text-align: center;
+}
+
+button{
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 30px 30px;
+}
