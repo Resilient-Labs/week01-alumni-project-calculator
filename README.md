@@ -1,26 +1,25 @@
-# 🔢 Week01 Alumni Project: Calculator
+# OOP Calculator
+Build a Simple Calculator using JS OOP best practices
 
-### Goal: Build a Simple Calculator using JS OOP best practices
+**Link to project:** https://dreamy-newton-b08b4b.netlify.com
 
-### What it should look like:
+![alt tag](calculator.jpg)
 
-![Calculator](calculator.jpg)
+## How It's Made:
 
-### How to submit your code for review:
+**Tech used:** HTML5, CSS3, JavaScript
+Styling for this project was done using a CSS Grid layout. Calculator behavior was written implementing object oriented programming in Javascript.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Optimizations
+Found it more efficient to iterate through a class of buttons vs having to write a different click event for each button.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Lessons Learned:
+This was my first attempt at writing a project with object oriented programming. Enjoyed that OOP kept my Javascript really organized.
+
+## Examples:
+
+**To-do List:** https://github.com/Eriquette/todo-list-2018c-week05/tree/answer
+
+**Daily Code Challenges:** https://github.com/Eriquette/Daily-Code-Challenges
+
+**Picture Gallery:** https://github.com/Eriquette/carousel-bootcamp2018c-week05
