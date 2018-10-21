@@ -1,0 +1,128 @@
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+  margin:0 ;
+  background-color: #FFFF8D;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/***************************************
+LAYOUT
+*****************************************/
+
+
+.container{
+  font-family: 'Exo', sans-serif;
+  margin: 3% 15%;
+  padding: 5%;
+  border-radius: 15px;
+  background-color: #85C6D6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+    "input input input input"
+    "clear clear clear plus"
+    "one two three minus"
+    "four five six multi"
+    "seven eight nine divide"
+    "zero period equal equal"
+}
+
+.input {
+  grid-area: input;
+}
+
+.clear {
+  grid-area: clear;
+  background-color: rgb(247,201,185);
+  font-size: 3em;
+  color:white;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.equal {
+  grid-area: equal;
+  background-color: rgb(241,138,145);
+  font-size: 3em;
+  color:white;
+}
+
+/***************************************
+CONTENT
+*****************************************/
+button{
+  padding: 30px 30px;
+  font-size: 2em;
+  border:none;
+  background-color: white;
+  color: #6B243D;
+  border-radius: 30px;
+}
+
+button:hover{
+  margin:0;
+  font-size: 3em;
+  color: rgb(241,138,145);
+  background-color: white;
+}
+
+input{
+  /* background-color: rgb(66,59,59); */
+  background-color: rgb(241,138,145);
+  font-size: 2.5em;
+  font-family: 'Exo', sans-serif;
+  border: none;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  /* color: rgb(241,138,145); */
+  margin-bottom: 10px;
+}
+
+.num {
+  background-color:
+}
+
+.op{
+  color: white;
+  background-color: #BEE9C2;
+}
+
+/***************************************
+MEDIA QUERIES
+*****************************************/
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* mobile */
+@media screen and (max-width: 767px){
+  .container{
+    margin: 20px;
+  }
+  button{
+    padding: 20px 20px;
+  }
+}
