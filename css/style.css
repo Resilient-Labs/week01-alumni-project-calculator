@@ -1,11 +1,17 @@
-/* Box Model Hack */
+
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  box-sizing: border-box;
 }
 
-/* Clear fix hack */
+*:focus {
+    outline: none;
+}
+
+body {
+  margin:0 ;
+  background-color: #FFFF8D;
+}
+
 .clearfix:after {
      content: ".";
      display: block;
@@ -15,119 +21,108 @@
      height: 0;
 }
 
+/***************************************
+LAYOUT
+*****************************************/
+
+
+.container{
+  font-family: 'Exo', sans-serif;
+  margin: 3% 15%;
+  padding: 5%;
+  border-radius: 15px;
+  background-color: #85C6D6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+    "input input input input"
+    "clear clear clear plus"
+    "one two three minus"
+    "four five six multi"
+    "seven eight nine divide"
+    "zero period equal equal"
+}
+
+.input {
+  grid-area: input;
+}
+
 .clear {
-	clear: both;
+  grid-area: clear;
+  background-color: rgb(247,201,185);
+  font-size: 3em;
+  color:white;
 }
 
-.alignright {
-	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+.plus {
+  grid-area: plus;
 }
 
-.alignleft {
-	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+.equal {
+  grid-area: equal;
+  background-color: rgb(241,138,145);
+  font-size: 3em;
+  color:white;
 }
 
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-
-/* MOBILE */
-@media only screen and (max-width: 768px){
-
-}
-@media (min-width: 769px) and (max-width: 1024px){
-  section{
-    width: 100%;
-  }
+/***************************************
+CONTENT
+*****************************************/
+button{
+  padding: 30px 30px;
+  font-size: 2em;
+  border:none;
+  background-color: white;
+  color: #6B243D;
+  border-radius: 30px;
 }
 
-
-
-body{
-  text-align: center;
-  background: rgb(204, 255, 255);
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+button:hover{
+  margin:0;
+  font-size: 3em;
+  color: rgb(241,138,145);
+  background-color: white;
 }
-h1{
-  font-size: 28px;
-  color: orange;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-}
+
 input{
-  font-size: 22px;
-  border: 1px solid black;
-  margin-bottom: 20px;
-}
-.main{
-  height: 350px;
-  width: 40%;
-  background: rgb(77, 166, 255);
-  border: 5px solid silver;
-  border-radius: 5%;
-  margin-left: 30%;
-  padding-left: 3%;
-}
-.main section{
-  height: 130px;
-  width: 42%;
-  background: turquoise;
-  margin: 18px 2% 12px 2%;
-  color: navy;
-  border: 4px solid lightgray;
-  font-size: 18px;
-  font-weight: bold;
-  padding-top: 10px;
-  float: left;
+  /* background-color: rgb(66,59,59); */
+  background-color: rgb(241,138,145);
+  font-size: 2.5em;
+  font-family: 'Exo', sans-serif;
+  border: none;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  /* color: rgb(241,138,145); */
+  margin-bottom: 10px;
 }
 
-#lion{
-  background: rgb(255, 153, 187);
+.num {
+  background-color:
 }
 
-#tiger{
-  background: lime;
-}
-#bear{
-  background: orange;
+.op{
+  color: white;
+  background-color: #BEE9C2;
 }
 
-.clear {
-	clear: both;
-}
+/***************************************
+MEDIA QUERIES
+*****************************************/
 
-.alignright {
-	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
-
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-
-/* MOBILE */
-@media only screen and (max-width: 768px){
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
 
 }
-@media (min-width: 769px) and (max-width: 1024px){
-  section{
-    width: 100%;
+
+/* mobile */
+@media screen and (max-width: 767px){
+  .container{
+    margin: 20px;
+  }
+  button{
+    padding: 20px 20px;
   }
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/

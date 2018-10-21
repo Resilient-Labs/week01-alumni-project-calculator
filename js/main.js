@@ -1,66 +1,75 @@
-// Object oriented Calculator
-class Calculator {
+// selects all buttons with the calss '.op'
+let opButton = document.querySelectorAll(".op");
+let equalButton = document.querySelector(".equal");
+// selects all buttons with the class '.num'
+let numButton = document.querySelectorAll(".num")
+let clearButton = document.querySelector(".clear");
+let input = document.querySelector(".input");
+var op = "";
 
-  // Add two values together and returns the sum
-  add (val1, val2) {
-    var sum = val1 + val2
-    return sum
-  }
-  // Subtract two values and return the difference
-  sub (val1, val2) {
-    var diff = val1 - val2
-    return diff
-  }
-  // Multiplies two values together and returns the product
-  multi (val1, val2) {
-    var prod = val1 * val2
-    return prod
-  }
-  // Divide two values and return the quotient
-  divi (val1, val2) {
-    var quot = val1 / val2
-    return quot
-  }
+// Creates calculator object
+let calc = {
+  val1: 0,
+  val2: 0,
+  equal: null,
 
-};
-// When the page loads create a claculator
-const calc = new Calculator();
-// Event listeners for add, subtract, multiply, and divide
-document.getElementById('zebra').onclick = addVal
-document.getElementById('lion').onclick = subVal
-document.getElementById('tiger').onclick = multiVal
-document.getElementById('bear').onclick = diviVal
-// Pulls values from DOM for addition
-function addVal(){
-  var val1 = parseInt(document.getElementById('val1').value)
-  var val2 = parseInt(document.getElementById('val2').value)
-  var addSum = calc.add(val1, val2)
-  // Displays sum in DOM
-  document.getElementsByTagName('h2')[0].innerHTML = addSum
+  // called by the opButton event listener: when user clicks
+  // on operator set val1 and set op
+  operation(){
+    val1 = Number(input.value);
+    input.value = "";
+  },
+
+  // called by equalButton event listener: when user clicks
+  // on equal set val2 and decide which operation to do
+  equate(){
+    val2 = Number(input.value);
+
+    if(op == "+"){
+      input.value = val1 + val2
+    }else if(op == "-"){
+      input.value = val1 - val2
+    }else if(op == "x"){
+      input.value = val1 * val2
+    }else if(op == "/"){
+      input.value = val1 / val2
+    }
+    // reset op value
+    op = "";
+  },
+
+  // called by clear button event listener
+  clear(){
+    input.value = "";
+    val1= 0
+    val2= 0
+    equal= null
+    op = "";
+  }
 }
-// Pulls values from DOM for subtraction
-function subVal(){
-  var val1 = parseInt(document.getElementById('val1').value)
-  var val2 = parseInt(document.getElementById('val2').value)
-  var difference = calc.sub(val1, val2)
-  // Displays difference in DOM
-  document.getElementsByTagName('h2')[0].innerHTML = difference
+
+// when number button gets clicked, insert number text to input
+for(let i = 0; i < numButton.length;i++){
+  numButton[i].addEventListener("click", function(e){
+    e.preventDefault();
+    input.value += this.textContent
+  });
 }
-// Pulls values from DOM for multiplication
-function multiVal(){
-  console.log('anne')
-  var val1 = parseInt(document.getElementById('val1').value)
-  var val2 = parseInt(document.getElementById('val2').value)
-  var product = calc.multi(val1, val2)
-  // Displays product in DOM
-  document.getElementsByTagName('h2')[0].innerHTML = product
+
+// when operator gets clicked set op to text content
+for(let i = 0; i < opButton.length;i++){
+  opButton[i].addEventListener("click", function(e){
+    e.preventDefault();
+    op = this.textContent;
+    // calc calls operation
+    calc.operation();
+  });
 }
-// Pulls values from DOM for division
-function diviVal(){
-  console.log('anne')
-  var val1 = parseInt(document.getElementById('val1').value)
-  var val2 = parseInt(document.getElementById('val2').value)
-  var quotient = calc.divi(val1, val2)
-  // Displays quotient in DOM
-  document.getElementsByTagName('h2')[0].innerHTML = quotient
-}
+
+
+
+// when equal gets clicked update val2, and do equation
+equalButton.addEventListener("click", calc.equate);
+
+// clear everything
+clearButton.addEventListener("click", calc.clear);

@@ -1,26 +1,25 @@
-# 🔢 Week01 Alumni Project: Calculator
+# 🔢 Quick Maths!
+This project is a simple calculator for users to perform quick maths!
 
-### Goal: Build a Simple Calculator using JS OOP best practices
+**Link to project:** https://pedantic-golick-4c339d.netlify.com/
 
-### What it should look like:
+![alt tag](screencap.png)
 
-![Calculator](calculator.jpg)
+## How It's Made:
 
-### How to submit your code for review:
+**Tech used:** HTML, CSS, JavaScript
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Using JavaScript I built a basic calculator. The user has the ability to set perform simple arithmetic calculations through the inputs. When the user enters a number and operator, the calculator stores these values then allows for a second input as well. After clicking on "=" the answer is displayed in the input field. Using object-oriented programming, I designed a calculator object with 3 properties and simple methods to do various calculations.
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Lessons Learned:
+
+Object oriented programming, and CSS Grid.
+
+## Related Projects:
+Take a look at these cool projects that I have in my portfolio:
+
+**Slot Machine:** https://tender-brahmagupta-7fb0c7.netlify.com
+
+**Attendance List:** https://sleepy-franklin-b8d685.netlify.com/
+
+**To-Do List:** https://tender-ritchie-caee3b.netlify.com/
