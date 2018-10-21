@@ -1,9 +1,86 @@
+body html {
+margin: 0;
+padding: 0;
+}
+
+
 body  {
   margin: 2em;
-  color: lightblue;
+  background-color: skyblue;
 }
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: white;
   }
+
+button {
+  transition: all 0.5s;
+  cursor: pointer;
+  outline: none;
+ }
+
+ button:hover {
+  width: 75px;
+  height: 75px;
+ }
+
+
+
+  .mainBox section{
+    width: 50%;
+    float: left;
+    height: 131px;
+  }
+
+.mainBox {
+  width: 40%;
+  height: 300px;
+  padding: 1%;
+}
+
+.topSec {
+  width: 100%;
+  height: 50%;
+  display: contents;
+  float: left;
+}
+
+.bottomSec{
+  width: 100%;
+  height: 50%;
+  display: contents;
+  float: left;
+}
+
+#add{
+  font-size: 40px;
+  width: 100%;
+  height: 120px;
+  border-radius: 25px;
+  background-color: rgb(255,255,255);
+}
+
+#mul {
+  font-size: 40px;
+  width: 100%;
+  height: 120px;
+  border-radius: 25px;
+  background-color: rgb(255,255,255);
+}
+
+#sub {
+  font-size: 40px;
+  width: 100%;
+  height: 120px;
+  border-radius: 25px;
+  background-color: rgb(255,255,255);
+}
+
+#div {
+  font-size: 40px;
+  width: 100%;
+  height: 120px;
+  border-radius: 25px;
+  background-color: rgb(255,255,255);
+}

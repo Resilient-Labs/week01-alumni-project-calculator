@@ -1,26 +1,27 @@
-# 🔢 Week01 Alumni Project: Calculator
+# Calculator  Project
+This Todo List project is basically a grocery list which helps you add and remove items and as well remove items that you already bought.
 
-### Goal: Build a Simple Calculator using JS OOP best practices
+**Link to project:** https://sad-fermat-6ade04.netlify.com/ 
 
-### What it should look like:
+![alt tag](calculator.png)
 
-![Calculator](calculator.jpg)
+## How It's Made:
 
-### How to submit your code for review:
+**Tech used:** HTML, CSS, jQuery
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+Welcome to my project Calculator. Basically straight forward here, we have a functional calculator which by entering in numbers on the boxes hit one of the buttons that is displayed, from there you should be able to receive an answer for your problems. 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Lessons Learned:
+
+I've learned from the previous projects is that all of them work in a similar way. Not really much to say really but overall JavaScript is not something you'll learn completely over night but it does take time. This is only the beginning of JavaScript.
+
+
+
+## Examples:
+Take a look at these couple examples that I have in my own portfolio:
+
+**Slot Machine;** https://heuristic-shaw-2f031d.netlify.com//
+**Todo List:** https://optimistic-jang-b15c0e.netlify.com/
+**Student List:** https://competent-curran-683be5.netlify.com/
+**Carousel:**https://heuristic-shaw-2f031d.netlify.com/
+
