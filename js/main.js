@@ -1,6 +1,6 @@
 const button = document.getElementsByTagName('button')
-let input = document.getElementsByClassName('answer')[0]
-let num = {
+const input = document.getElementsByClassName('answer')[0]
+const num = {
   'val1': '',
   'val2': ''
 }
