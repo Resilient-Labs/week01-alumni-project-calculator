@@ -39,6 +39,7 @@ Array.from(button).forEach((el, e) => {
       num.val1 = ''
       num.val2 = ''
       count = 1
+      operator = ''
       input.value = 0
     }
   });
