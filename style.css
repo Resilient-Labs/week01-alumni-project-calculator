@@ -1,0 +1,66 @@
+html {
+  font-size: 18px;
+}
+
+body{
+  margin: 0;
+  padding: 10px;
+
+}
+
+button{
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+}
+h4{
+  margin: 0 auto;
+
+  background: -webkit-linear-gradient(#eee, #8c1d1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+table{
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 0.5%;
+}
+
+.main {
+  background: rgb(200, 189, 151);
+  display: flex;
+  border-top: 1.5px solid rgb(55, 6, 75);
+  border-right: 10px solid rgb(55, 6, 75);
+  border-left: 1.5px solid rgb(55, 6, 75);
+  border-bottom: 10px solid rgb(55, 6, 75);
+  width: 50%;
+  margin: 0 auto;
+  flex-flow: column;
+  text-align: right;
+  color: navy;
+  padding-top: 10px;
+}
+.title{
+  display: flex;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: #8c1d1d;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #8c1d1d;
+}
+
+
+#inputOutput {
+  display: flex;
+  flex-flow: row;
+  width:80%;
+  height: 5rem;
+  border-radius: 1.5%;
+  margin-left: 40px;
+  font-size: 3rem;
+  color: rgb(158, 126, 31);
+  background-color: rgba(9, 7, 1, 0.75);
+  border-color: rgb(55, 6, 75);
+}
