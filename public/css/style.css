@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  background-image: url('../img/desk.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:
+}
+header{
+  padding-top: 20px;
+}
+h1{
+  color: white;
+  margin: 0;
+}
+.calc{
+  width: 35%;
+  margin: 2% auto;
+  background-color: black;
+  padding: 2% 2%;
+  border-radius: 50px;
+  margin-right: 30%;
+}
+.calc input{
+  width: 70%;
+  height: 70px;
+  margin: 20px auto;
+  font-size: 3.5rem;
+  text-align: right;
+}
+
+.row{
+  width: 100%;
+  padding: 10px 10px;
+}
+.row:last-child button{
+  font-size: 1.5rem;
+  width: 70px;
+  height: 70px;
+}
+
+button{
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  font-size: 1.8rem;
+}
+
+button:hover{
+  background-color: lightgrey;
+}
+
+button:focus{
+  outline: 0;
+}
