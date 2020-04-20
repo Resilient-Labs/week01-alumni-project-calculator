@@ -38,8 +38,11 @@ tr td {
     padding-right: 10%;
     overflow: auto;
 }
-.operation{
+.equalButton{
   background-color: orange
+}
+.operatorButton{
+  background-color: orange;
 }
 
 button{
