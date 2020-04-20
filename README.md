@@ -1,5 +1,6 @@
 # 🔢 Week01 Alumni Project: Calculator
 
+## Check out the app here: https://peaceful-bell-d985a5.netlify.app/
 ### Goal: Build a Simple Calculator using JS OOP best practices
 
 ### What it should look like:
