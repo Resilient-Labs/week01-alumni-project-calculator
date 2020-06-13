@@ -23,9 +23,6 @@ const calculator = {
         target.classList.remove('clicked')
       }, 200)
 
-      console.log(typeof target.value)
-      console.log(target.value)
-
       if (target.name != 'button') return; // not on TD? Then we're not interested
       // We click on a number gets
       if (target.value == 'AC') {
