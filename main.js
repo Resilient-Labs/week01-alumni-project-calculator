@@ -3,7 +3,7 @@ const calculator = {
   numbers: {
     numArray: [],
     number: '',
-    answer: 0,
+    answer: Number(localStorage.getItem('items')) || 0,
   },
   operation: [],
   methods: {
@@ -12,9 +12,10 @@ const calculator = {
     "*": (arr) => arr.reduce((acc, curr) => acc * curr),
     "/": (arr) => arr.reduce((acc, curr) => acc / curr)
   },
+  calculatorDisplay: '',
   work() {
     table.onclick = (event) => {
-      let calculatorDisplay = document.getElementById('display')
+      this.calculatorDisplay = document.getElementById('display')
       // console.log(calculatorDisplay.innerText);
       // Im only interested in the clicks that happen on a 'td'
       let target = event.target.closest('button');
@@ -30,19 +31,24 @@ const calculator = {
         this.numbers.number = '';
         this.numbers.answer = 0
         this.operation = []
-        calculatorDisplay.innerText = ''
+        this.calculatorDisplay.innerText = ''
+        localStorage.setItem('answer', this.numbers.answer)
+        localStorage.setItem('answer', this.numbers.numArray)
+        localStorage.setItem('answer', this.operation)
+        localStorage.setItem('answer', this.numbers.number)
         return;
       }
       // Add numbers to the DOM and to current number to be pushed later into numsArray stack to be reduced
       if (!['/', '+', "*", '-', '='].includes(target.value)) {
         console.log('sdf');
         this.numbers.number += (target.value);
-        if (calculatorDisplay.innerText == this.numbers.numArray[this.numbers.numArray.length - 1]) {
-          calculatorDisplay.innerText = ''
-          calculatorDisplay.innerText += target.value;
+        if (this.calculatorDisplay.innerText == this.numbers.numArray[this.numbers.numArray.length - 1]) {
+          this.calculatorDisplay.innerText = ''
+          this.calculatorDisplay.innerText += target.value;
         } else {
-          calculatorDisplay.innerText += target.value;
+          this.calculatorDisplay.innerText += target.value;
         }
+
       }
       // Push current number into numsArray and reset the current number
       // Also push the opperation into the operations stack
@@ -56,14 +62,14 @@ const calculator = {
           this.numbers.numArray = []
           this.numbers.numArray.push(Number(this.numbers.answer));
           this.numbers.number = ''
-          calculatorDisplay.innerText = this.numbers.answer
+          this.calculatorDisplay.innerText = this.numbers.answer
         } else {
           // Push current number into numsArray and reset the current number
           // Also push the opperation into the operations stack
           this.numbers.numArray.push(Number(this.numbers.number));
           this.numbers.number = ''
           this.operation.push(target.value)
-          calculatorDisplay.innerText = this.numbers.numArray[this.numbers.numArray.length - 1]
+          this.calculatorDisplay.innerText = this.numbers.numArray[this.numbers.numArray.length - 1]
         }
       }
       // Push current number to numsArray and reduce with operation that is in operationArray
@@ -73,9 +79,15 @@ const calculator = {
         this.numbers.answer = this.methods[action](this.numbers.numArray)
         this.numbers.number = this.methods[action](this.numbers.numArray)
         this.numbers.numArray = []
-        calculatorDisplay.innerText = this.numbers.answer
+        this.calculatorDisplay.innerText = this.numbers.answer
+        console.log(this.numbers.answer)
+        localStorage.setItem('items', this.numbers.answer)
       }
     };
+  },
+  setTotoal(){
+    this.calculatorDisplay.innerText = this.numbers.answer
   }
 }
 calculator.work()
+window.onload = calculator.setTotoal()
